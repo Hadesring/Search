@@ -1,0 +1,13 @@
+
+/**
+ * Judging whether an object is array
+ * 
+ * @param {Object} arg The object is tested as an array
+ * @return {Boolean} If it is array then TURE or then FALSE
+ */
+function isArray(arg) {
+    if (arg && typeof arg === 'object') {
+        return Object.prototype.toString.call(arg) === '[object Array]';
+    }
+    return false;
+}
